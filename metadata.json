@@ -1,0 +1,5 @@
+{
+  "name": "News Prism (新聞稜鏡)",
+  "description": "A news analysis platform that breaks through media bias by aggregating 5+ sources and extracting core facts, perspectives, and potential biases using AI.",
+  "requestFramePermissions": []
+}

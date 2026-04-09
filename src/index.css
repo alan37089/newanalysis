@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans TC", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Playfair Display", serif;
+
+  --color-prism-bg: #fcfcfc;
+  --color-prism-ink: #1a1a1a;
+  --color-prism-accent: #3b82f6;
+  --color-prism-border: #e5e7eb;
+}
+
+@layer base {
+  body {
+    @apply bg-prism-bg text-prism-ink font-sans antialiased;
+  }
+}
+
+.prism-grid {
+  background-image: linear-gradient(var(--color-prism-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-prism-border) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-prism-border shadow-sm;
+}
+
